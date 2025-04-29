@@ -47,6 +47,12 @@ Ao iniciar, será solicitado o nome do arquivo de labirinto (ex: `Teste1.txt`) o
 - **Coordinate**: Representa coordenadas no labirinto.
 - **Clonador**: Realiza clonagem de objetos que implementam `Cloneable`.
 
+## Estruturas de Dados: Pilha e Fila
+
+A classe `Pilha` implementa uma estrutura LIFO (Last-In, First-Out) com redimensionamento dinâmico. No projeto, `Pilha` é usada na busca em profundidade (DFS): cada coordenada acessada é empilhada ao avançar e removida ao retroceder, permitindo explorar todos os caminhos.
+
+A classe `Fila` implementa uma estrutura FIFO (First-In, First-Out) também com redimensionamento dinâmico. Embora não seja utilizada na solução de DFS atual, `Fila` está disponível para futuras estratégias de busca em largura (BFS) ou outros fluxos que requerem processamento sequencial.
+
 ## Funcionamento
 1. Lê dimensões e mapa do arquivo de texto.
 2. Valida caracteres e posição de entrada/saída na borda.
